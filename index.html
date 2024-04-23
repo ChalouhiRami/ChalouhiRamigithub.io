@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Motorcycle Shop</title>
+
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="stylesheet"
+      integrity="sha512-j5sFoDv6VQMpS2K2lpnijZ4ERwaAO8sj5Y5DPQqUpBRDaZ8LEh+o5XYkIOcMMkDz+1glL94M3sJB2wV5lbxIcQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Welcome to Our Motorcycle Shop!</h1>
+        <p>
+          We're dedicated to providing the best motorcycles and offers for
+          enthusiasts like you.
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="carousel">
+          <div class="carousel__item">
+            <img src="img1.jpg" alt="Image 1" />
+          </div>
+          <div class="carousel__item">
+            <img src="Img2_modified.jpg" alt="Image 2" />
+          </div>
+          <div class="carousel__item">
+            <img src="img3.jpg" alt="Image 3" />
+          </div>
+          <!-- Add more carousel items as needed -->
+        </div>
+
+        <section id="video">
+          <h2>Promotional Video</h2>
+          <!-- Add your video here -->
+          <video controls>
+            <source src="video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </section>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h3>About Us</h3>
+            <p>
+              Welcome to Motorides_lb! <br />
+              At Motorides_lb, we're your go-to destination for all types of
+              motorcycles. From top-quality bikes to essential gear and
+              accessories, we've got you covered. 🔧 With our expertise and
+              passion for riding, we're here to help you find the perfect bike
+              and gear for your adventures. Follow us for the latest updates and
+              promotions! Ride on, and let's explore the freedom of the open
+              road together! <br />✨ Our mission is simple: to be your trusted
+              partner in our motorcycles magical world!
+            </p>
+          </div>
+          <div class="footer__section">
+            <h3>Follow Us</h3>
+            <ul class="social-icon">
+              <li class="social-icon__item">
+                <a id="phone-icon" class="fa fa-phone"></a>
+              </li>
+              <li class="social-icon__item">
+                <a
+                  id="instagram-link"
+                  class="social-icon__link"
+                  href="#"
+                  target="_blank"
+                >
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script>
+      document
+        .getElementById("instagram-link")
+        .addEventListener("click", function (event) {
+          event.preventDefault(); // Prevent the default behavior of following the link
+          window.open("https://www.instagram.com/motorides_lb/", "_blank"); // Open the link in a new window
+        });
+      const phoneIcon = document.getElementById("phone-icon");
+
+      // Add click event listener to the phone icon
+      phoneIcon.addEventListener("click", function () {
+        // Define the phone number
+        const phoneNumber = "+96176753312"; // Replace with your actual phone number
+
+        // Show alert with the phone number
+        alert("Call us at: " + phoneNumber);
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+/* Reset default browser styles */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header p {
+  font-size: 18px;
+}
+
+main {
+  padding: 40px 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+video {
+  width: 100%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel__item {
+  height: 300px; /* Height of the container */
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: black; /* Light grey background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.carousel__item img {
+  width: 100%; /* Ensure the image fills the entire container horizontally */
+  height: 100%; /* Ensure the image fills the entire container vertically */
+  object-fit: contain; /* Ensure the entire image is visible while maintaining its aspect ratio */
+}
+
+.carousel__item--selected {
+  display: block;
+}
+
+.carousel__nav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+.carousel__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel__button--selected {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: black;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+.footer__section h3 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.social-icon__link,
+.fa.fa-phone {
+  /* Apply styles to the phone icon */
+  font-size: 2rem;
+  color: #fff;
+  margin: -10px 10px 0;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+.fa.fa-phone:hover, /* Apply hover effect to the phone icon */
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+#video video {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  max-width: fit-content; /* Adjust the maximum height as needed */
+}
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
